@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Meal Timetable</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('wp5145432-food-aesthetic-wallpapers.jpg');
+            background-size: cover;
+            background-position: left;
+            background-color: black; /* Set background color to black */
+            color: white; /* Set default font color to white */
+            background-repeat: no-repeat;
+
+        }
+        .container {
+            background-color: rgba(141, 139, 139, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .content-box {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 8px;
+        }
+
+        .meal-table th, .meal-table td {
+            text-align: center;
+            color: white; 
+        }
+        .meal-table td:first-child {
+    color: #ff7f00; /* Orange color for days (first column) */
+}
+        .title, .remarks {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white; 
+             font-size: 1.5em;
+        }
+        .remarks {
+            font-style: italic;
+        }
+        /* Separate Box for Title */
+.title-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ff7f00; /* Orange background for title box */
+    border-radius: 8px;
+    text-align: center;
+    color: white; /* White text for title */
+    
+}
+
+/* Orange-colored headings */
+.meal-table th {
+    text-align: center;
+    background-color: #ff7f00; /* Orange color for headings */
+    color: white;
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+<div class="title-box">
+    <h1>WEEKLY MEAL PLAN</h1>
+</div>
+            <table class="table table-bordered meal-table">
+                <thead>
+                    <tr>
+                        <th>DAY</th>
+                        <th>BREAKFAST</th>
+                        <th>LUNCH</th>
+                        <th>SNACKS</th>
+                        <th>DINNER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Monday -->
+                    <tr>
+                        <td>MONDAY</td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Idli</td><td>200g</td></tr>
+                                    <tr><td>Sambar</td><td>150g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Vegetable Biryani</td><td>250g</td></tr>
+                                    <tr><td>Raita</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Samosa</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Masala Dosa</td><td>250g</td></tr>
+                                    <tr><td>Coconut Chutney</td><td>50g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Tuesday -->
+                    <tr>
+                        <td>TUESDAY</td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Upma</td><td>200g</td></tr>
+                                    <tr><td>Coconut Chutney</td><td>50g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Chapati</td><td>2 pieces</td></tr>
+                                    <tr><td>Paneer Butter Masala</td><td>200g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Vada</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Chicken Curry</td><td>250g</td></tr>
+                                    <tr><td>Rice</td><td>200g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Wednesday -->
+                    <tr>
+                        <td>WEDNESDAY</td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Pongal</td><td>200g</td></tr>
+                                    <tr><td>Chutney</td><td>50g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Rice</td><td>200g</td></tr>
+                                    <tr><td>Vegetable Kurma</td><td>200g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Masala Peanuts</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Vegetable Korma</td><td>250g</td></tr>
+                                    <tr><td>Paratha</td><td>2 pieces</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Thursday -->
+                    <tr>
+                        <td>THURSDAY</td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Rawa Dosa</td><td>200g</td></tr>
+                                    <tr><td>Tomato Chutney</td><td>50g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Curd Rice</td><td>200g</td></tr>
+                                    <tr><td>Pickle</td><td>30g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Pakoras</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Fish Curry</td><td>250g</td></tr>
+                                    <tr><td>Rice</td><td>200g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Friday -->
+                    <tr>
+                        <td>FRIDAY</td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Idiyappam</td><td>200g</td></tr>
+                                    <tr><td>Egg Curry</td><td>150g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Vegetable Sambar</td><td>200g</td></tr>
+                                    <tr><td>Rice</td><td>200g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Masala Corn</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Chicken Fry</td><td>250g</td></tr>
+                                    <tr><td>Chapati</td><td>2 pieces</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Saturday -->
+                    <tr>
+                        <td>SATURDAY</td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Dosa</td><td>200g</td></tr>
+                                    <tr><td>Vegetable Stew</td><td>150g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Rasam Rice</td><td>200g</td></tr>
+                                    <tr><td>Thoran</td><td>150g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Fruit Chaat</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Egg Curry</td><td>250g</td></tr>
+                                    <tr><td>Rice</td><td>200g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Sunday -->
+                    <tr>
+                        <td>SUNDAY</td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Medu Vada</td><td>200g</td></tr>
+                                    <tr><td>Chutney</td><td>50g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Vegetable Biryani</td><td>250g</td></tr>
+                                    <tr><td>Raita</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Chivda</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Hyderabadi Biryani</td><td>250g</td></tr>
+                                    <tr><td>Salad</td><td>100g</td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content-box">
+            <div class="remarks">Remarks: Customize your meal plan based on dietary needs and preferences.</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

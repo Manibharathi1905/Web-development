@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Weekly Meal Plan</title>
+    <style>
+        body {
+            background: url('your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover; /* Make sure the background image covers the whole page */   background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .border-black {
+            border: 1px solid black !important;
+        }
+        .table-custom {
+            width: 100%; /* Ensure table fills the container */
+            border-collapse: collapse; /* Collapse table borders */
+            margin: 0;
+            height: 100%; /* Ensure table takes full height */
+        }
+        .table-custom td{
+            border: 1px solid black !important;
+            padding: 0; /* Adjust padding as needed */
+            text-align: center; 
+
+        }
+        .table-custom th {
+            border: 1px solid black !important;
+            padding: 0; /* Adjust padding as needed */
+            text-align: center; /* Align text to the left */
+            font-weight: bold;
+
+        }
+       
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch; /* Ensure table container takes full height */
+            padding: 0;
+            margin: 0;
+        }
+        .day-box {
+            min-height: 300px; /* Adjust as needed for box size */
+            display: flex;
+            align-items: stretch; /* Stretch table containers to full height */
+            border: 1px solid black; /* Border around each day box */
+            margin-bottom: 0; /* Space between days */
+        }
+        .day-box .col {
+            padding: 0; /* Remove padding inside each column */
+        }
+        h1, .fw-bold {
+            color: orange; /* Heading color */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container border-black mt-4">
+        <!-- Title -->
+        <h1 class="text-center my-4">Weekly Meal Plan</h1>
+
+        <!-- Table Header -->
+        <div class="row border-black text-center fw-bold ">
+            <div class="col border-black">Day</div>
+            <div class="col border-black">Morning</div>
+            <div class="col border-black">Evening</div>
+            <div class="col border-black">Dinner</div>
+        </div>
+
+        <!-- Monday -->
+        <div class="row border-black day-box">
+            <div class="col border-black fw-bold text-center d-flex align-items-center justify-content-center">
+                Monday
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oatmeal</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Fruit</td>
+                            <td>150g</td>
+                        </tr>
+                        <tr>
+                            <td>Coffee</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Salad</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Chicken Sandwich</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Juice</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grilled Fish</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Steamed Vegetables</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Rice</td>
+                            <td>150g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Tuesday -->
+        <div class="row border-black day-box">
+            <div class="col border-black fw-bold text-center d-flex align-items-center justify-content-center">
+                Tuesday
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pancakes</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Bacon</td>
+                            <td>150g</td>
+                        </tr>
+                        <tr>
+                            <td>Orange Juice</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pasta Salad</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Grilled Chicken</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Smoothie</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beef Stir-fry</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Rice</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Green Tea</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="row border-black day-box">
+            <div class="col border-black fw-bold text-center d-flex align-items-center justify-content-center">
+                Wednesday
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Smoothie Bowl</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Granola</td>
+                            <td>150g</td>
+                        </tr>
+                        <tr>
+                            <td>Tea</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Turkey Wrap</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Fruit Salad</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Spaghetti</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Garlic Bread</td>
+                            <td>150g</td>
+                        </tr>
+                        <tr>
+                            <td>Salad</td>
+                            <td>200g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Thursday -->
+        <div class="row border-black day-box">
+            <div class="col border-black fw-bold text-center d-flex align-items-center justify-content-center">
+                Thursday
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Yogurt</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Honey</td>
+                            <td>50g</td>
+                        </tr>
+                        <tr>
+                            <td>Toast</td>
+                            <td>100g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chicken Soup</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Bread</td>
+                            <td>100g</td>
+                        </tr>
+                        <tr>
+                            <td>Lemonade</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pasta</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Salad</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Friday -->
+        <div class="row border-black day-box">
+            <div class="col border-black fw-bold text-center d-flex align-items-center justify-content-center">
+                Friday
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scrambled Eggs</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Bacon</td>
+                            <td>150g</td>
+                        </tr>
+                        <tr>
+                            <td>Toast</td>
+                            <td>100g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Caesar Salad</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Grilled Chicken</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Juice</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pizza</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Salad</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Soda</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Saturday -->
+        <div class="row border-black day-box">
+            <div class="col border-black fw-bold text-center d-flex align-items-center justify-content-center">
+                Saturday
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bagels</td>
+                            <td>150g</td>
+                        </tr>
+                        <tr>
+                            <td>Butter</td>
+                            <td>30g</td>
+                        </tr>
+                        <tr>
+                            <td>Jam</td>
+                            <td>20g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Burger</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Fries</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Soda</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Steak</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Mashed Potatoes</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Wine</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sunday -->
+        <div class="row border-black day-box">
+            <div class="col border-black fw-bold text-center d-flex align-items-center justify-content-center">
+                Sunday
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Waffles</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Syrup</td>
+                            <td>50g</td>
+                        </tr>
+                        <tr>
+                            <td>Fruit</td>
+                            <td>150g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sandwich</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Chips</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Tea</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col border-black table-container">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Grams</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grilled Chicken</td>
+                            <td>300g</td>
+                        </tr>
+                        <tr>
+                            <td>Salad</td>
+                            <td>200g</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>250ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- JavaScript for Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9B9yFjAWtWIOE8Y4bsTz3twz5RzOJl5VIZN5pfaEik41fF6oZzC" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq74p57Pq5lzjNlTG6k7r3onMslpKzPdj6H2l6SggzcbfJXZU9" crossorigin="anonymous"></script>
+    </div>
+
+</body>
+</html>
