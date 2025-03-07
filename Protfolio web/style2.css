@@ -1,0 +1,411 @@
+/* -------------------- VARIABLES -------------------- */
+:root {
+    /* ========== COLORS =========== */
+    --first-color: #00DFED;
+    --first-color-alt: #00DFED;
+    --first-shadow-color: rgba(0, 0, 0, 0.09);
+    --title-color: white;
+    --text-color: white;
+    --color-white: #FFF;
+
+    /* ========== FONT AND SIZE =========== */
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 5rem;
+    --h1-font-size: 3rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.813rem;
+}
+
+/* -------------------- REUSABLE STYLES -------------------- */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+
+body,
+button,
+input {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.5;
+    
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* -------------------- HEADER -------------------- */
+#header {
+     width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: fixed; /* Keep the header fixed */
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    color: black;
+    z-index: 1000;
+    box-shadow: 0 1px 1px 1px #00DFED;
+
+}
+
+.nav-logo {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.nav-name {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 50px;
+
+}
+
+
+
+.nav_menu_list {
+    display: flex;
+    gap: 50px;
+    color: white;
+padding: 50px;
+}
+
+.nav_list {
+    position: relative;
+    display: flex;
+    align-items: center;
+        color: white;
+
+    border-bottom: 2px solid #00DFED;
+
+}
+
+.nav-link {
+    color: white;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+       font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-link:hover {
+    color: var(--first-color);
+}
+
+
+.section .top-header h1
+{
+    color:#00DFED ;
+}
+
+/* -------------------- MAIN -------------------- */
+.wrapper {
+   width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+/* ----- FEATURED TEXT ----- */
+.featured-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        margin-top: 20px; /* Add margin if necessary */
+
+}
+
+.featured-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+        margin-top: 60px;
+text-align: justify;
+margin-bottom: 50px;
+}
+
+
+.featured-text-info h1{
+ font-size: var(--h1-font-size);
+    color: var(--title-color);
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.featured-text-info h1 b{
+ font-size: var(--h1-font-size);
+    color: #00DFED;
+    font-weight: 600;
+    margin-top: 60px
+}
+
+
+.featured-text-info p {
+    font-size:20px;
+    color: #00DFED;
+    font-weight: 600;
+
+
+}
+.featured-text-info p2 {
+    margin-top: 30px;
+    color: var(--text-color);
+text-align: justify;
+}
+
+
+
+/* ----- SOCIAL ICONS ----- */
+.social_icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.icon {
+    background: var(--first-color-alt);
+    color: var(--color-white);
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+    background: var(--first-color);
+}
+
+/* ----- FEATURED IMAGE ----- */
+.featured-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.featured-image .image {
+    position:center;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px 2px var(--first-shadow-color);
+    width: 400px;
+    padding: 40px;
+    margin-top: 90px;
+}
+
+.featured-image .image img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* -------------------- ABOUT ME -------------------- */
+.section {
+    width: 100%;
+    min-height: 100vh; /* Ensure each section covers the full viewport height */
+    padding-top: 100px; /* Space for the fixed header */
+    box-sizing: border-box; 
+
+}
+
+.top-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.top-header h1 {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    font-weight: 600;
+     height: 40px;
+}
+
+.col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+/* ----- ABOUT INFO ----- */
+
+
+.about-info:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.about-btn {
+    margin-top: 20px;
+}
+
+/* ----- SKILLS BOX ----- */
+.skills-box {
+    margin-bottom: 30px;
+}
+
+.skills-header {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.skills-list {
+    flex-direction: row;    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills-list span {
+    background: var(--first-color-alt);
+    color: var(--color-white);
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.skills-list span:hover {
+    background: var(--first-color);
+}
+
+/* -------------------- PROJECTS -------------------- */
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 15px;
+
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: var(--first-color);
+    color: var(--color-white);
+    border-radius: 30px;
+    width: 100%;
+    height: 80%;
+    transition: background-color 0.3s ease;
+
+
+
+}
+
+.project-box i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.project-box h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.project-box label {
+    font-size: 1rem;
+}
+
+.project-box:hover {
+    background-color: var(--first-color-alt);
+}
+
+/* -------------------- CONTACT -------------------- */
+.contact-info {
+padding: 30px;
+    color: var(--color-white);
+    border-radius: 15px;
+    margin: 80px;
+
+ background-color: #000000;
+    box-shadow: 0 2px 2px 2px #00DFED;
+    overflow: hidden;
+    transition: transform 0.2s;
+    flex-basis: calc(20% - 20px); /* Adjusts the size of the anime block */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+
+
+.contact-info p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+
+.featured-box, .about-info, .project-container, .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure full height sections are centered */
+}
+
+
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    background: var(--first-color);
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: var(--normal-font-size);
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
